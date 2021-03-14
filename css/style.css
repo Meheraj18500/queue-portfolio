@@ -1,0 +1,677 @@
+/* ======================== Googl fonts ========================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
+
+/* ======================== Basic Setup ========================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Nunito', sans-serif;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+:focus {
+    outline: none;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* ======================== Reuseable Components ========================*/
+
+.container {
+    max-width: 1310px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.ptb-115 {
+    padding: 100px 0;
+}
+
+.pb-50 {
+    padding-bottom: 50px;
+}
+
+.pt-50 {
+    padding-top: 50px;
+}
+
+.pt-30 {
+    margin-top: 30px;
+}
+
+.little-description {
+    font-size: 16px;
+    color: #8492a6 ;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.bg-1 {
+    background: #fff;
+}
+
+.bg-2 {
+    background: #F8F9FA;
+}
+
+.btn {
+    font-size: 16px !important;
+    display: inline-block;
+    padding: 10px 38px;
+    border-radius: 10px;
+    border: none;
+    background: #137ae9;
+    color: #fff;
+    font-weight: 600 !important;
+    position: relative;
+    z-index: 1;
+    text-transform: capitalize;
+    box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.03);
+    transition: all linear 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    background: #0d5cb1;
+}
+
+.section-header {
+    color: #161c2d;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.section-description {
+    width: 48%;
+    text-align: center;
+    display: block;
+    font-size: 17px;
+    font-weight: 500;
+    color: #8492a6;
+    margin: 0 auto;
+    line-height: 28px;
+}
+
+.sub-header {
+    text-transform: capitalize;
+    font-size: 25px;
+    font-weight: 700;
+    color: #000;
+    padding-bottom: 12px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.sub-header::before {
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 3px;
+    background: #DC965A;
+    left: 0;
+    bottom: 0;
+}
+
+
+/* ======================== Navigation ========================*/
+
+nav {
+    background-color: rgba(60, 72, 88, 0.7);
+    padding-top: 10px;
+}
+
+nav .navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .navbar ul {
+    display: flex;
+}
+
+nav .navbar .logo h3 {
+    font-size: 28px;
+    line-height: 70px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+nav .navbar .menu-item a {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    display: block;
+    line-height: 70px;
+    padding: 0 15px;
+    transition: all 0.5s;
+    letter-spacing: 0.5px;
+}
+
+nav .navbar .menu-item a:hover {
+    color: #0b72e0;
+}
+
+nav .navbar .menu-item a.active {
+    color: #0b72e0;
+}
+
+nav .navbar .social-menu {
+    padding-left: 40px;
+}
+
+nav .navbar .social-menu a {
+    font-size: 18px;
+    color: #007bff;
+    display: block;
+    line-height: 70px;
+    padding: 0 6px;
+    transition: all 0.5s;
+}
+
+
+/* ======================== Hero Section ========================*/
+
+#home {
+    background: url('../img/hero-bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#home .hero-overlay {
+    height: 100vh;
+    position: relative;
+    background-color: rgba(60, 72, 88, 0.7);
+}
+
+.hero-section .hero-content {
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    text-align: center;
+    color: #fff;
+    padding-top: 130px;
+}
+
+.hero-section .hero-content .hero-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 5px solid #d3d3d3;
+}
+
+.hero-section .hero-content h2 {
+    font-size: 36px;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+    font-weight: 600;
+    margin-bottom: 8px;
+    margin-top: 25px;
+}
+
+.hero-section .hero-content h6 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+
+.hero-section .hero-content h6 span {
+    color: #137ae9;
+}
+
+.hero-section .hero-content .hero-btn {
+    margin: 0 5px;
+}
+
+.hero-section .hero-overlay .social-link {
+    position: absolute;
+    bottom: 40px;
+    right: 50px;
+}
+
+.hero-section .social-link ul {
+    display: flex;
+}
+
+.hero-section .social-link ul li a {
+    display: block;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 37px;
+    background: #fff;
+    margin: 0 4px;
+    color: #000;
+    transition: all linear .3s;
+}
+
+.hero-section .social-link ul li a:hover {
+    background: #DC965A;
+    color: #fff;
+}
+
+
+/* ======================== About Us Section ========================*/
+
+.about-us {
+    background: #F8F9FA;
+    width: 100%;
+    height: 150px;
+}
+
+.about-us .card {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: -115px;
+    box-shadow: 0 0 3px rgba(60, 72, 88, 0.15);
+}
+
+.about-us .card .presonal-info {
+    width: 550px;
+    height: 100%;
+    background: #f6f7fa;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.about-us .card .presonal-info h5 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #161c2d;
+    letter-spacing: 0.5px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #b5b9bd;
+}
+
+.about-us .card .presonal-info li {
+    font-size: 14px;
+    font-weight: 500;
+    color: #161c2d;
+    display: block;
+    padding: 5px 0;
+}
+
+.about-us .card .presonal-info li span {
+    font-size: 14px;
+    font-weight: 500;
+    color: #707070;
+}
+
+.about-us .card .presonal-text {
+    margin-left: 35px;
+    margin-top: 16px;
+}
+
+.about-us .card .presonal-text img {
+    width: 200px;
+    margin-top: 15px;
+    margin-left: -6px;
+}
+
+.about-us .card .presonal-text h4 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about-us .card .presonal-text h4 span {
+    color: #0d6efd;
+}
+
+.about-us .card .presonal-text p {
+    color: #8492a6;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/*======================== Services Section ========================*/
+.services .card {
+    background: #fff;
+    padding: 30px 45px;
+    box-shadow: 0px 0 20px rgba(0, 0, 0, 0.05);
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.services .card .icon {
+    width: 38px;
+    height: 38px;
+    font-size: 35px;
+    line-height: 38px;
+    color: #007bff ;
+}
+
+.services .card .card-header {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+    margin: 20px 0;
+}
+.services .card a{
+    font-size: 15px;
+    color: #137ae9;
+    letter-spacing: 1px;
+    margin-top: 25px;
+    display: inline-block;
+}
+.services .card a:hover{
+    color: #0a2c88;
+}
+.services .card a i{
+    margin-left: 8px;
+    transition: all 0.3s;
+}
+.services .card:hover a i{
+    margin-left: 12px;
+}
+
+/*======================== Experience Section ========================*/
+.experience .section-description{
+    width: 100% !important;
+}
+.experience .skill-icon{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: url('../img/skills.jpg');
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+.experience .icon-box{
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    line-height: 100px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    position: relative;
+    margin-left: 25px;
+}
+.experience .icon-box img{
+    width: 35px;
+}
+.experience .icon-box::before{
+    content: attr(data-percent);
+    width: 36px;
+    height: 18px;
+    font-size: 14px;
+    cursor: pointer;
+    line-height: 18px;
+    text-align: center;
+    border-radius: 5px;
+    color: #007bff;
+    background: rgba(0, 123, 254, 0.08);
+    position: absolute;
+    top: 0;
+    right: -15px;
+}
+
+/*============================ Portfolio Section ============================*/
+.portfolio .card {
+    background: #fff;
+    box-shadow: 0px 1px 20px  rgba(0, 0, 0, 0.1);
+    position: relative;
+    border-radius: 10px;
+    height: 312px;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.portfolio .card::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(rgba(0, 123, 255, 0.7) 10%, rgba(22, 28, 45, 0.7));
+    transition: all 0.3s;
+    border-radius: 10px;
+    opacity: 0;
+    z-index: 1;
+}
+.portfolio .card:hover::before{
+    opacity: 1;
+}
+
+.portfolio .card::after {
+    content: '\f030';
+    width: 100%;
+    height: 100%;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    font-size: 35px;
+    display: grid;
+    place-items: center;
+    transition: all 0.3s;
+    z-index: 1;
+    opacity: 0;
+}
+
+.portfolio .card:hover:after {
+    opacity: 1;
+}
+
+.portfolio .card-img img{
+    border-radius: 10px;
+    transition: all 0.3s;
+    z-index: -1;
+}
+
+.portfolio .card:hover .card-img img{
+    transform: scale(1.1);
+}
+
+.portfolio .card .card-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    opacity: 0;
+    transition: all 0.3s;
+    z-index: 1;
+}
+.portfolio .card:hover .card-text{
+    opacity: 1;
+}
+
+.portfolio .card .card-text h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.portfolio .card .card-text p {
+    color: #fff;
+}
+
+/*======================== Blog Section ========================*/
+.blog .card{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.blog .card .card-content{
+    padding: 20px 15px;
+}
+.blog .card .card-content h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: #343a40;
+    margin: 0 0 15px;
+    transition: all 0.5s;
+}
+.blog .card .card-content p{
+    line-height: 25px;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+.blog .card .card-content .card-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.blog .card .card-content .card-bottom span{
+    color: #8492a6;
+    font-size: 16px;
+    transition: all 0.5s;
+}
+.blog .card .card-content .card-bottom a{
+    color: #75808f;
+    font-size: 16px;
+    transition: all 0.5s;
+}
+.blog .card .card-content .card-bottom a i{
+    margin-left: 10px;
+}
+.blog .card .card-content h3:hover,
+.blog .card .card-content .card-bottom span:hover,
+.blog .card .card-content .card-bottom a:hover{
+    color: #4a84db;
+}
+
+/*======================== Contact Section ========================*/
+.contact .contact-info{
+    text-align: center;
+}
+.contact .contact-info i{
+    font-size: 30px;
+    margin: 30px 0;
+    color: #343a40;
+}
+.contact .contact-info h3{
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+.contact .contact-info a{
+    font-size: 16px;
+    font-weight: 400;
+    color: #007bff;
+    display: inline-block;
+    margin: 25px 0;
+}
+.contact .contact-info a:hover{
+    color: #0657ad;
+}
+.contact .contact-box .form-control{
+    width: 100%;
+    padding: 13px 15px;
+    border-radius: 10px;
+    border: 1px solid #d3d3d3;
+    margin-bottom: 30px;
+    background: transparent;
+}
+.contact .contact-box textarea{
+    font-family: 'Nunito', sans-serif;
+    width: 100%;
+    height: 190px;
+}
+.contact .contact-box .contact-btn{
+    float: right;
+}
+
+/* ======================== Footer Section ========================*/
+.footer-content{
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 30px;
+    color: #343a40;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.footer-content p{
+    font-size: 16px;
+    color: #343a40;
+    font-weight: 400;
+    margin-bottom: 10px;
+    line-height: 25px;
+}
+.footer-content .social-link{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+.footer-content .social-link li a{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    line-height: 30px;
+    font-size: 14px;
+    border: 1px solid #343a40;
+    text-align: center;
+    display: inline-block;
+    color: #000;
+    margin: 0 5px;
+}
+
+.copyright {
+    background: #161c2d;
+    color: #fff;
+    padding: 25px 0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: #8a929b;
+}
+
+
